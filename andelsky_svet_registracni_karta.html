@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andělský Svět - Registrační karta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+            background-color: #c8b7a6;
+            color: #2d2d2d;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            padding: 5px;
+            margin-top: 5px;
+            width: 100%;
+            border: 1px solid #8d7966;
+            border-radius: 5px;
+            background-color: #f4ece6;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #8d7966;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .header {
+            text-align: center;
+            font-size: 38px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 150px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Andělský Svět - Registrační karta</div>
+    <img src="/mnt/data/logo_sharpened.png" class="logo" alt="Andělský Svět logo">
+    <form id="animalForm">
+        <label for="name">Jméno:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="species">Rasa/plemeno:</label>
+        <input type="text" id="species" name="species" required>
+
+        <label for="gender">Pohlaví:</label>
+        <select id="gender" name="gender">
+            <option value="pes">Pes</option>
+            <option value="fena">Fena</option>
+        </select>
+
+        <label for="birthdate">Datum narození:</label>
+        <input type="date" id="birthdate" name="birthdate">
+
+        <label for="color">Barva:</label>
+        <input type="text" id="color" name="color">
+
+        <label for="weight">Váha (kg):</label>
+        <input type="number" id="weight" name="weight" step="0.1">
+
+        <label for="chip">Tetování/čip:</label>
+        <input type="text" id="chip" name="chip">
+
+        <label for="castrated">Kastrovaný/á:</label>
+        <select id="castrated" name="castrated">
+            <option value="ano">Ano</option>
+            <option value="ne">Ne</option>
+        </select>
+
+        <label for="admissionDate">Datum nálezu:</label>
+        <input type="date" id="admissionDate" name="admissionDate">
+
+        <label for="location">Místo nálezu/uložení:</label>
+        <input type="text" id="location" name="location">
+
+        <label for="personality">Info o povaze:</label>
+        <textarea id="personality" name="personality" rows="3"></textarea>
+
+        <label for="photo">Fotografie:</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+
+        <button type="submit">Uložit</button>
+    </form>
+</body>
+</html>
